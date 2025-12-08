@@ -8,13 +8,9 @@ name: Lint Code Base
 
 on:
   push:
-    branches: 
-      - main
-      - feature-about
+    branches: [ "main", "feature-about" ]
   pull_request:
-    branches: 
-      - main
-      - feature-about
+    branches: [ "main", "feature-about" ]
 jobs:
   run-lint:
     runs-on: ubuntu-latest
